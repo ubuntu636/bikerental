@@ -282,16 +282,26 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top:1vw ;
+  margin-top: 1vw;
 }
 .b{
   height: 3vw;
   width: 6vw;
- 
   align-items: center;
   background-color: #693EFF;
   color: #eee;
 }
+
+
+@media screen and (max-width: 768px) {
+  .b {
+    height: 10vw; /* Adjust the height for mobile */
+    width: 20vw; /* Adjust the width for mobile */
+    font-size: 4vw; /* Adjust the font size for mobile */
+  }
+}
+
+
 
 
 
