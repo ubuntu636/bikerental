@@ -1,0 +1,81 @@
+/* Reset default margin and padding */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+/* Set a background color for the body */
+/* body {
+    background: #00BCD4;
+} */
+
+/* Style for the slider container */
+.slider-box {
+    width: 80%; /* Set a default width */
+    max-width: 1200px; /* Limit the maximum width */
+    margin: 30px auto; /* Center the slider horizontally */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Style for the slider */
+#slider {
+    width: 100%;
+    display: flex; /* Use flexbox for layout */
+    transition: 0.7s;
+}
+
+/* Style for the images inside the slider */
+#slider img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Style for the indicators container */
+.indicators {
+    position: absolute;
+    left: 50%; /* Center horizontally */
+    bottom: 20px;
+    transform: translateX(-50%);
+}
+
+/* Style for the individual indicator buttons */
+.indicators span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    margin-right: 5px; /* Add spacing between indicators */
+}
+
+/* Style for the active indicator */
+.active {
+    background: #ffff !important;
+}
+
+/* Media query for tablet-sized screens */
+@media screen and (max-width: 767px) {
+    .slider-box {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+}
+
+/* Media query for mobile-sized screens */
+@media screen and (max-width: 480px) {
+    .slider-box {
+        width: 100%; /* Take up full width on mobile */
+    }
+    
+    .indicators {
+        bottom: 10px; /* Adjust position of indicators */
+    }
+    
+    .indicators span {
+        width: 10px; /* Make indicators smaller for mobile */
+        height: 10px;
+        margin-right: 3px; /* Reduce spacing between indicators */
+    }
+}
